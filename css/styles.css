@@ -44,3 +44,12 @@ body{
   border-bottom: 1px solid #ddd;
   padding: 10px;
 }
+
+.dot {
+  height: 15px;
+  width: 15px;
+  background-color: #FF0000;
+  border-radius: 50%;
+  display: inline-block;
+  position: relative;
+}
