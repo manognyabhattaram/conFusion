@@ -366,11 +366,16 @@
       if($('#carouselButton').children('span').hasClass('fa-pause')){
         $('#mycarousel').carousel('pause');
         $('#carouselButton').children('span').removeClass('fa-pause');
-        $('carouselButton').children('span').addClass('fa-play');
+        $('#carouselButton').removeClass('btn-danger');
+        $('#carouselButton').children('span').addClass('fa-play');
+        $('#carouselButton').addClass('btn-success');
       }else{
         $('#mycarousel').carousel('cycle');
         $('#carouselButton').children('span').removeClass('fa-play');
-        $('carouselButton').children('span').addClass('fa-pause');
+        $('#carouselButton').removeClass('btn-success');
+        $('#carouselButton').children('span').addClass('fa-pause');
+        $('#carouselButton').addClass('btn-danger');
+
       }
     });
 
