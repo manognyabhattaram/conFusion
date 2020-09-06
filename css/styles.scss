@@ -74,3 +74,19 @@ body{
     bottom: 0px;
     z-index: 1;
 }
+
+#loginTag:hover {
+	 color: rgba(255,255,255,0.5);
+}
+
+.modal-header {
+	background-color: $background-dark;
+	color: floralwhite;
+	.close{
+		color: floralwhite;
+	}
+}
+
+.modal-body{
+	background-color: $background-pale;
+}

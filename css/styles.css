@@ -52,3 +52,15 @@ body {
   position: absolute;
   bottom: 0px;
   z-index: 1; }
+
+#loginTag:hover {
+  color: rgba(255, 255, 255, 0.5); }
+
+.modal-header {
+  background-color: #512DA8;
+  color: floralwhite; }
+  .modal-header .close {
+    color: floralwhite; }
+
+.modal-body {
+  background-color: #D1C4E9; }

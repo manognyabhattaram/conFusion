@@ -32,7 +32,7 @@
               <li class = "nav-item"><a class = "nav-link" href = "contactus.html"><span class = "fa fa-address-card fa-lg"></span> Contact</a></li>
             </ul>
             <span class = "navbar-text">
-              <a data-toggle = "modal" data-target = "#loginModal">
+              <a id = 'loginTag'>
                 <span class = "fa fa-sign-in"></span> Login
               </a>
             </span>
@@ -145,7 +145,7 @@
                   <img src = "img/logo.png" alt = "Logo" class = "img-fluid">
                 </div>
                 <div class = "col-12 col-sm-3 align-self-center">
-                  <a class = "btn btn-block nav-link btn-warning" role = "button" data-toggle = "modal" data-target = "#reserveModal"><strong>Reserve Table</strong></a>
+                  <a class = "btn btn-block nav-link btn-warning" id = "reserveButton" role = "button"><strong>Reserve Table</strong></a>
                 </div>
                 <!-- FOR TOOLTIP: <div class = "col-12 col-sm-3 align-self-center">
                   <a class = "btn btn-block nav-link btn-warning" role = "button" data-toggle = "tooltip" data-html = "true" title = "Or call us at <br><strong>+852 12345678</strong>" data-placement="bottom" href = "#reserve"><strong>Reserve Table</strong></a>
@@ -344,43 +344,7 @@
     <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
     <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
     <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
-
-<!-- SCRIPT FOR TOOLTIP<script>
-  $(document).ready(function(){
-    $('[data-toggle="tooltip"]').tooltip();
-  });
-</script> -->
-
-<script>
-  $(document).ready(function() {
-    $('#mycarousel').carousel({ interval: 2000, pause: "false"});
-    // $('#carousel-pause').click(function() {
-    //   $('#mycarousel').carousel('pause');
-    // });
-    //
-    // $('#carousel-play').click(function() {
-    //   $('#mycarousel').carousel('cycle');
-    // });
-
-    $('#carouselButton').click(function() {
-      if($('#carouselButton').children('span').hasClass('fa-pause')){
-        $('#mycarousel').carousel('pause');
-        $('#carouselButton').children('span').removeClass('fa-pause');
-        $('#carouselButton').removeClass('btn-danger');
-        $('#carouselButton').children('span').addClass('fa-play');
-        $('#carouselButton').addClass('btn-success');
-      }else{
-        $('#mycarousel').carousel('cycle');
-        $('#carouselButton').children('span').removeClass('fa-play');
-        $('#carouselButton').removeClass('btn-success');
-        $('#carouselButton').children('span').addClass('fa-pause');
-        $('#carouselButton').addClass('btn-danger');
-
-      }
-    });
-
-  });
-</script>
+    <script src = "js/scripts.js"></script>
 
 </body>
 
